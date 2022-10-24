@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    @@./section/header.html
+    @@include('../src/sections/header.html')
 
     <main>
       <div class="hero-area__wrap">
-        <div class="content hero-area">
+        <div class="container hero-area">
           <span class="hero-area__subtitle">Fast Food Burgers</span>
           <h1 class="hero-area__title">The fastest food, for instant hunger.</h1>
           <p class="hero-area__text">
@@ -24,7 +24,7 @@
       </div>
 
       <div class="food-list__wrap">
-        <div class="content food-list">
+        <div class="container food-list">
           <div class="food-list__card">
             <div class="food-list__img-wrap">
               <img src="img/chicken-paella.jpg" alt="chicken-paella" />
@@ -57,13 +57,15 @@
       </div>
 
       <div class="order-section__wrap">
-        <div class="content order-section">
+        <div class="container order-section">
           <div class="order-section__img-wrap">
             <img src="img/burger.png" alt="burger" class="order-section__img" />
           </div>
           <div class="order-section__content">
             <h1 class="order-section__title">Burger King</h1>
-            <p class="order-section__text">Together with McDonald’s, Burger King has grown to become synonymous with burgers in the US.</p>
+            <p class="order-section__text">
+              Together with McDonald’s, Burger King has grown to become synonymous with burgers in the US.
+            </p>
             <div class="price__wrap">
               <span class="price new-price">$6</span>
               <span class="price old-price">$8</span>
@@ -74,7 +76,7 @@
       </div>
 
       <div class="product-section__wrap">
-        <div class="content product-section">
+        <div class="container product-section">
           <div class="product-section__card">
             <h2 class="product-section__title">Dairy Queen</h2>
             <p class="product-section__text">Dairy Queen is one of the biggest fast-food.</p>
@@ -115,7 +117,7 @@
       </div>
 
       <div class="feedback__wrap">
-        <div class="content feedback">
+        <div class="container feedback">
           <div class="feedback__img-wrap">
             <img src="img/face1.jpg" alt="face" class="feedback__img" />
             <img src="img/face2.jpg" alt="face" class="feedback__img" />
@@ -125,7 +127,10 @@
           </div>
           <div class="feedback__content">
             <img src="img/icon/quote-symbol.svg" alt="quote" class="feedback__quote-img" />
-            <q class="feedback__quote">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie Moments.</q>
+            <q class="feedback__quote"
+              >Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best
+              Taste. Foodie Moments.</q
+            >
             <span class="feedback__author">Adele A. McNeill</span>
             <span class="feedback__author-ntn">American</span>
           </div>
@@ -133,13 +138,13 @@
       </div>
 
       <div class="dl-menu__wrap">
-        <div class="content dl-menu">
+        <div class="container dl-menu">
           <h1 class="dl-menu__title">Download Our Menu</h1>
           <button class="btn">Download</button>
         </div>
       </div>
     </main>
 
-    @@./section/footer.html
+    @@include('../src/sections/footer.html')
   </body>
 </html>

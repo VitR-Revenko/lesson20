@@ -1,6 +1,37 @@
 .header {
-  padding: 20px;
-  min-height: 100px;
-  background-color: blue;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrap {
+    background: url(../img/front-bckgrnd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  &__logo {
+    max-width: 100px;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+
+  &__link {
+    font-weight: normal;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
 }
