@@ -16,8 +16,12 @@
     "start": "gulp start"
   },
   "keywords": [
-    "dsf"
+    ""
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VitR-Revenko/lesson20.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
