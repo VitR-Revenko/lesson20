@@ -34,4 +34,9 @@
     color: #ffffff;
     text-decoration: none;
   }
+
+  &__item:hover {
+    animation: scale;
+    animation-duration: 2s;
+  }
 }

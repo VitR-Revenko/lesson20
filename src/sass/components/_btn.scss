@@ -8,5 +8,7 @@
 
   &:hover {
     cursor: pointer;
+    animation: scale;
+    animation-duration: 2s;
   }
 }
