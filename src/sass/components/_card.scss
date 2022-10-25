@@ -1,0 +1,72 @@
+.food-list {
+  &__card {
+    max-width: 262px;
+    background: #312f30;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.75rem;
+  }
+
+  &__title {
+   font-size: 1.25rem;
+   font-weight: 500;
+   line-height: 1.5rem;
+   padding: 1.75rem 0 1rem;
+   text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    opacity: 0.7;
+  }
+}
+
+.product-section {
+    &__card {
+        width: 555px;
+        height: 300px;
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__card-1 {
+        background: url(../img/dairy-queen.jpg);
+        background-size: 100%;
+        align-items: flex-end;
+    }
+
+    &__card-2 {
+        background: url(../img/pizza-hut.jpg);
+        background-size: 100%;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+    
+    &__card-3 {
+        background: url(../img/burger-king.jpg);
+        background-size: 100%;
+        align-items: flex-end;
+    }
+
+    &__card-4 {
+        background: url(../img/papa-john.jpg);
+        background-size: 100%;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    &__text {
+        max-width: 15rem;
+        opacity: 0.7;
+    }
+}

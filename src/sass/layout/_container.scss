@@ -1,13 +1,177 @@
 html {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-  font-size: 16px;
+
+  * {
+    margin: 0;
+  }
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__wrap {
+    padding-top: 11.5rem;
+    padding-bottom: 15rem;
+    position: absolute;
+    top: 0;
+    left: 12rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 0.4rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    max-width: 555px;
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+
+  &__text {
+    max-width: 525px;
+    font-size: 1.15rem;
+    padding: 2.5rem 0;
+  }
+}
+
+.order-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  &__wrap {
+    background-color: #312f30;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+  }
+
+  &__text {
+    opacity: 0.7;
+  }
+
+  &__price {
+    font-size: 1.25rem;
+  }
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+
+  &__wrap {
+    padding-bottom: 12.5rem;
+    background-color: #1c1c1c;
+  }
+
+  &__img-wrap {
+    width: 346px;
+    height: 346px;
+    border-radius: 50%;
+    border: 1px dashed #f6762c;
+    position: relative;
+  }
+
+  &__img-wrap::before {
+    content: '';
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 1px dashed #f6762c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &__img-1 {
+    top: 75%;
+    left: 80%;
+  }
+
+  &__img-2 {
+    top: 0;
+    left: 0;
+  }
+
+  &__img-3 {
+    top: 70%;
+    left: 10%;
+  }
+
+  &__img-4 {
+    top: 10%;
+    left: 75%;
+  }
+
+  &__img-5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__quote {
+    padding: 2rem 0;
+    opacity: 0.7;
+    max-width: 22.5rem;
+    text-align: center;
+  }
+
+  &__author {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__author-ntn {
+    text-transform: uppercase;
+  }
+}
+
+.dl-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrap {
+    padding: 3.75rem;
+    background-color: #312f30;
+  }
 }
