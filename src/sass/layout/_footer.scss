@@ -30,6 +30,11 @@
     font-weight: normal;
   }
 
+  &__email {
+    display: flex;
+    align-items: flex-start;
+  }
+
   &__email::before {
     content: url(../img/icon/email.svg);
     padding: 0 0.25rem;
