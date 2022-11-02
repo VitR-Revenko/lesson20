@@ -1,13 +1,19 @@
 .footer {
-  padding: 7.5rem 0;
-  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+
+  &__wrap {
+    padding: 7.5rem 0;
+    background-color: #1c1c1c;
+  }
 
   &__menu {
     display: flex;
+    flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: space-between;
     list-style: none;
-    flex-wrap: wrap;
+    gap: 10rem;
   }
 
   &__menu-item {
